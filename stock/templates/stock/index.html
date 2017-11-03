@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://code.highcharts.com/stock/highstock.js"></script>
+    <script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
+    <script>
+         $.getJSON('/stock_data', function (data) {
+    // create the chart
+            Highcharts.stockChart('aapl_container', {
+
+
+                rangeSelector: {
+                    selected: 1
+                },
+
+                title: {
+                    text: 'AMZN Stock Price'
+                },
+
+                series: [{
+                    type: 'candlestick',
+                    name: 'AMZN Stock Price',
+                    data: data,
+                    dataGrouping: {
+                        units: [
+                            [
+                                'week', // unit name
+                                [1] // allowed multiples
+                            ], [
+                                'month',
+                                [1, 2, 3, 4, 6]
+                            ]
+                        ]
+                    }
+                }]
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="aapl_container" style="height: 400px; min-width: 310px"></div>
+
+</body>
+</html>
