@@ -13,7 +13,7 @@ numpy==1.13.3
 pandas==0.21.0
 pdb==0.1
 python-dateutil==2.6.1
-python-gnupg==0.4.1
+python-gnupg==0.4.4
 python-magic==0.4.13
 pytz==2017.3
 requests==2.18.4
