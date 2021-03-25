@@ -1,5 +1,5 @@
 Django==1.11.7
-PyYAML==3.12
+PyYAML==5.4
 argparse==1.2.1
 certifi==2017.7.27.1
 chardet==3.0.4
