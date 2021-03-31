@@ -7,7 +7,7 @@ django-csvimport==2.11
 html5lib==0.999999999
 idna==2.6
 json-table-schema==0.2.1
-lxml==4.1.0
+lxml==4.6.3
 messytables==0.15.2
 numpy==1.13.3
 pandas==0.21.0
