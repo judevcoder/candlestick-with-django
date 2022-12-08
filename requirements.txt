@@ -1,7 +1,7 @@
 Django==1.11.7
 PyYAML==3.12
 argparse==1.2.1
-certifi==2017.7.27.1
+certifi==2022.12.7
 chardet==3.0.4
 django-csvimport==2.11
 html5lib==0.999999999
